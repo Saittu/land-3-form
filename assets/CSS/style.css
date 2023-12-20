@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-header-title: #535971;
+    --c-text: #4E4958;
+    --c-span: #C1BCCC;
+    --c-button: #DD5374;
+    --bg-body: #EFEFEF;
+    --c-text-header: #FFF;
+    --c-border: #E6E6F0;
+    --Back-Lines-in-white: 1px solid #E6E6F0;
+    --Shapes-01: #FAFAFC;
+    --ft-staat: "Staatliches", sans-serif;
+    --ft-poppins: "Poppins", sans-serif;
+    --bd-radius: 8px;
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-body);
+
+    font-size: 1.6rem;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 38.7rem;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--bg-header-title);
+}
+
+.main {
+    width: 75rem;
+    margin: auto;
+}
+
+header {
+    width: 32.2rem;
+    padding-top: 10rem;
+    
+}
+
+header  {
+    font-family: var(--ft-staat);
+    color: var(--c-text-header);
+    font-size: 4.8rem;
+    margin-bottom: 1.8rem;
+}
+
+header p {
+    font-family: var(--ft-poppins);
+    color: var(--c-text-header);
+    font-size: 2rem;
+}
+
+form {
+   min-height: 30rem;
+}
+
+fieldset{
+    border: none;
+}
+
+#my-form {
+    background-color: var(--c-text-header);
+    width: 74.2rem;
+    margin-top: 3.2rem;
+    padding-top: 6.4rem;
+    border-radius: 20px 20px 0 0;
+}
+
+.form-total form legend {
+    font-family: var(--ft-staat);
+    color: var(--bg-header-title);
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    width: 62.2rem;
+
+    border-bottom: 1px solid var(--c-border);
+
+    padding-bottom: 1.6rem;
+}
+
+.form-total form .info{
+    margin-left: 6.4rem;
+    display: flex;
+    gap: 2.2rem;
+    border-radius: var(--bd-radius);
+}
+
+.form-total form .form-name,
+.form-total form .form-sobre{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.6rem;
+}
+
+.form-total form .form-name input,
+.form-total form .form-sobre input,
+.form-total form .mentoring-first #date input, 
+.form-total form .mentoring-second #second-date input {
+    width: 30rem;
+    height: 5.6rem;
+    border-radius: var(--bd-radius);
+    border: var(--Back-Lines-in-white);
+    background: var(--Shapes-01);
+    margin-top: 8px;
+}
+
+label {
+    font-family: var(--ft-poppins);
+    color: var(--c-text);
+}
+
+span {
+    color: var(--c-span);
+    font-size: 1.2rem;
+}
+
+span:hover{
+    color: #5b5863;
+}
+
+.form-email,
+.password,
+.mentor {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1.6rem 6.4rem;
+}
+
+.form-email input,
+.password input,
+.mentor input {
+    width: 62.2rem;
+    height: 5.6rem;
+    border: var(--Back-Lines-in-white);
+    border-radius: var(--bd-radius);
+    background: var(--Shapes-01);
+    margin-top: 8px;
+}
+
+.form-total form #h1-child-2,
+.form-total form #h1-child-3{
+    margin-top: 3rem;
+    padding-bottom: 8px;
+}
+
+.form-total form #h1-child-4,
+.mentor,
+.mentor label,
+.mentoring-first{
+    margin-top: 3.2rem;
+}
+
+.form-total form .mentoring-date{
+    font-size: 2rem;
+    margin-top: 1.6rem;
+    border: none;
+    padding: 0;
+}
+
+.mentoring-first,
+.mentoring-second {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.mentoring-first,
+.mentoring-second,
+.form-total form #h1-child-3 {
+    margin-left: 6.4rem;
+}
+
+.date-time {
+    display: flex;
+    flex-direction: column;
+}
+
+#time-first input,
+#second-time input,
+#second-time-first input,
+#mentoring-second-time input{
+    width: 14rem;
+    height: 5.6rem;
+    border-radius: var(--bd-radius);
+    border: var(--Back-Lines-in-white);
+    background: var(--Shapes-01);
+    margin-top: 8px;
+}
+#date,
+#second-date{
+    margin-top: 8px;
+}
+
+#time-first,
+#second-time-first {
+    margin-left: 3.2rem;
+}
+
+.mentoring-second {
+    padding-bottom: 6.4rem;
+    margin-top: 1.6rem;
+}
+
+footer{
+    background: var(--bg-header-title);
+    width: 74.2rem;
+    height: 16rem;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 10.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 60.8rem;
+    padding: 1.5rem 4rem;
+
+
+    border-radius: 20px;
+    background: var(--c-button);
+    border: none;
+
+    color: var(--c-text-header);
+    font-family: var(--ft-staat);
+    font-size: 2rem;
+}
+
+.button:hover {
+    background: #ec5c7e;
+    border: 1px solid white;
+    transition: 0.4s;
+    transform: rotateY(360deg);
+}
+
+
+
+.input-wrapper {
+    padding: 0 2.4rem;
+
+    font-family: var(--ft-poppins);
+
+    color: var(--c-text);
+        
+}
+
+.input-wrapper:invalid{
+    border: 1px solid var(--c-button);
+}
